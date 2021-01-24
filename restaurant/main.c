@@ -705,23 +705,23 @@ void new_employee(){
 
     if(ch == 1){
         rank = Dishwasher;
-        pay = 500;
+        emp.pay = 500;
     }
     else if(ch == 2){
         rank = Waiter;
-        pay = 1000;
+        emp.pay = 1000;
     }
     else if(ch == 3){
         rank = Cook;
-        pay = 1500;
+        emp.pay = 1500;
     }
     else if(ch == 4){
         rank = Chef;
-        pay = 2000;
+        emp.pay = 2000;
     }
     else if(ch == 5){
         rank = Manager;
-        pay = 2500;
+        emp.pay = 2500;
     }
 }
 
@@ -834,6 +834,10 @@ void customer(){
     //The customer chooses a table to stay at
     printf("Now, choose a table to stay at from 1 to 15: ");
     scanf("%d", &cus.table);
+    if(cus.table > 15){
+        printf("Please choose another table\n");
+        customer();
+    }
     //Hands them the menu using the start() function
     printf("Alright, here's the menu\n");
     
