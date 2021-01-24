@@ -705,18 +705,23 @@ void new_employee(){
 
     if(ch == 1){
         rank = Dishwasher;
+        pay = 500;
     }
     else if(ch == 2){
         rank = Waiter;
+        pay = 1000;
     }
     else if(ch == 3){
         rank = Cook;
+        pay = 1500;
     }
     else if(ch == 4){
         rank = Chef;
+        pay = 2000;
     }
     else if(ch == 5){
         rank = Manager;
+        pay = 2500;
     }
 }
 
